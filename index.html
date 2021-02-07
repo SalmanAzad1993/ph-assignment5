@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <title>Cooking Monster</title>
+</head>
+
+<body>
+  <!-- Navigation Menu Section-->
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a href="#" class="navbar-brand pl-5 ml-5">
+        <h2>Cooking master</h2>
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ml-auto pr-5 pl-5">
+          <a href="#" class="nav-item nav-link active">Home</a>
+          <a href="#" class="nav-item nav-link">About</a>
+          <a href="#" class="nav-item nav-link">Recipes</a>
+          <a href="#" class="nav-item nav-link">Blogs</a>
+        </div>
+      </div>
+    </nav>
+  <!-- Search Area for meals -->
+  <main>
+    <div class="flex" id="top-margin">
+      <form class="flex" id="submit">
+        <button id="search-icon" type="submit"><i id="search-icon" class="fas fa-search"></i></button>
+        <input type="text" id="search" placeholder="search for meals...">
+        <button id="searchBtn" class="search-btn" type="submit"> Search</button>
+      </form>
+    </div>
+    <div id="meals-area">
+      <div id="show-result"></div>
+      <div id="meals" class="meals"></div>
+    </div>
+    <div id="single-meal"></div>
+  </main>
+  <!-- Script source added here -->
+  <script src="app.js"></script>
+</body>
+</html>
